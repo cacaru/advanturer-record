@@ -1,0 +1,41 @@
+/*
+=========================
+Parallox.css
+=========================
+*/
+
+.background_root {
+    width: 100vw;
+    height: 100dvh;
+}
+
+.move_area {
+    position: absolute;
+    left: 27%;
+    top: 8%;
+    width: 48%;
+    height: 60%;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+.move_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url("../../public/UI/Background/day_out.png");
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+
+.frame {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../public/UI/Background/default.png");
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    z-index: 0;
+}

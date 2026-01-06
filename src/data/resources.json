@@ -1,0 +1,7 @@
+{
+  "resources": [
+    { "id": "gold", "value": 77777777 },
+    { "id": "holy_crystal", "value": 88888888 },
+    { "id": "aurora_crystal", "value": 99999999 }
+  ]
+}
