@@ -1,0 +1,106 @@
+/************************************
+character List Page css
+*************************************/
+
+/* 좌측 목록 */
+.leftListContainer {
+    position: absolute;
+    top: 20%;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 16px;
+}
+
+.leftList {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    padding-left: 16px;
+}
+
+.listTitle {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.leftList::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: rgba(180, 150, 100, 0.7);
+
+    transition: background 0.2s ease, height 0.2s ease;
+}
+
+.leftList:hover {
+    border-left: 0px;
+    border-color: rgba(230, 196, 143, 0.8);
+    border-style: solid;
+    color: rgba(230, 196, 134, 1);
+}
+
+.leftList:hover {
+    filter: drop-shadow(0 0 6px rgba(230, 196, 143, 0.8));
+}
+
+.leftList:hover::before {
+    background-color: rgba(230, 196, 143, 0.8);
+    height: 100%;
+}
+
+.listIcon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.6))
+            drop-shadow(0 0 12px rgba(150, 255, 241, 0.726));
+}
+
+.classSelected {
+    border-left: 0px;
+    border-style: solid;
+    border-color: rgba(230, 196, 143, 0.8);
+    color: rgba(230, 196, 134, 1);
+}
+
+.listIconSelected {
+    filter: drop-shadow(0 0 6px rgba(255,255,255, 1))
+            drop-shadow(0 0 12px rgba(250, 233, 197, 1));
+}
+
+
+/* --- 중앙 캐릭터 목록 카드 --- */
+.characterList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+    top: 9%;
+    left: 330px;
+    width: 1540px;
+    height: 75vh;
+
+    overflow-y:auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;;
+
+    border: 2px solid black;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.characterItem,  
+.characterCard {
+    width: 300px;
+    height: 500px;
+    border: 2px solid white;
+}

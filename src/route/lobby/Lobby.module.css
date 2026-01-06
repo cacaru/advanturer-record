@@ -1,0 +1,92 @@
+/**************************
+Lobby Frame css
+****************************/
+
+/* 공통 박스 스타일 (흰색 배경; 그림자) */
+.box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/*   --- 하단 (뽑기, 상점, 업적, 창고) ---  */
+.bottomBtnGroup {
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.bottomBtn {
+    width: 100px;
+    height: 60px;
+}
+
+/*    --- 오른쪽 메뉴 그룹 (핵심 레이아웃) ---    */
+.rightMenuContainer {
+    position: absolute;
+    bottom: 20%;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+/* --- 오른쪽 상단 그룹 (캐릭터 목록 + 서브메뉴 3개) ---  */
+.upperRow {
+    display: flex;
+    gap: 15px;
+}
+
+.characterBox {
+    width: 320px;
+    height: 360px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.subMenuCol { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 360px; /* 캐릭터 목록 높이와 맞추기 */
+}
+
+.smallBtn {
+    width: 200px;
+    height: 100px;
+}
+
+/* --- 오른쪽 하단 그룹 (뽑기/상점 + 모험개시) --- */
+
+.lowerRow {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.lowerSubCol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.adventureBtn {
+    width: 320px;
+    height: 255px;
+    font-size: 1.5rem;
+    background-color: #fff; 
+}
+
+.mediumBtn {
+    width: 200px;
+    height: 120px;
+}
