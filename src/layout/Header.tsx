@@ -3,14 +3,9 @@ import { useResourceStore } from '../store/resource.store';
 import { ResourceIcon } from '../component/IconReader';
 import styles from './Header.module.css';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ResourceValue } from '../types/resource';
 
 export default function Header() {
-    interface ResourceValue {
-        value: number;
-        id: string;
-        name: string;
-        image: string;
-    }
 
     const [resource_value, setResource] = useState<ResourceValue[]>([]);
     const resourcesLoaded = useResourceStore((state) => state.isLoaded);
@@ -36,7 +31,15 @@ export default function Header() {
     // 화면 이동기
     const navigater = useNavigate();
     const MoveBack = () =>{
-        navigater('/');
+        var path = "";
+        switch(cpath){
+            case "/character":
+                path = "/";
+                break;
+            case "/character/detail":
+                path = "/character";
+        }
+        navigater(path);
     }
 
     return (
@@ -52,6 +55,13 @@ export default function Header() {
                 <div className={styles.topLeft}>
                     <div className={styles.backBtn} onClick={MoveBack}>
                         뒤로 가기 
+                    </div>
+                </div>
+            )}
+            {   cpath === "/character/detail" && (
+                <div className={styles.topLeft}>
+                    <div className={styles.backBtn} onClick={MoveBack}>
+                        돌아 가기
                     </div>
                 </div>
             )}

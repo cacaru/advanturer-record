@@ -1,10 +1,7 @@
 import { create } from "zustand";
+import { Resource } from "../types/resource";
 
 /* 재화 싱글톤 */
-interface Resource {
-    id: string;
-    value: number;
-}
 
 export interface ResourcesStore {
     resources : Resource[];

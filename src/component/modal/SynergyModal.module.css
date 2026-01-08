@@ -1,0 +1,47 @@
+/***********************
+synergy modal css
+************************/
+
+.container{
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+
+    width: 700px;
+    padding: 20px 20px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(92, 90, 72, 0.95),
+        rgba(51, 39, 0, 0.95)
+    );
+    border: 1px solid rgba(230, 227, 56, 0.25);
+    border-radius: 15px;
+
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.8),
+                0 6px 14px rgba(0,0,0,0.8);
+
+    color: rgba(234, 234, 234, 1);
+}
+
+.top {
+    top: 0;
+    height: 13%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+.exit {
+    position: relative;
+}
+
+.synergyTitle {
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255, 211, 106, 1);
+}
+
+.content {
+    bottom: 0;
+    height: 90%;
+}

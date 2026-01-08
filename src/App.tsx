@@ -5,6 +5,8 @@ import CharacterList from './route/character/characterList';
 import { loadLocalResource } from './component/resourcesLoader';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './layout/Header';
+import CharacterDetail from './route/character/characterDetail';
+import Modal from './component/modal/Modal';
 
 
 function App() {
@@ -41,9 +43,11 @@ function App() {
       <div ref={scaleRef} className="container">
         <BrowserRouter>
           <Header />
+          <Modal />
           <Routes>
             <Route path="/" element={<Lobby />} />
             <Route path="/character" element={<CharacterList />} />
+            <Route path="/character/detail" element={<CharacterDetail />} />
           </Routes>
         </BrowserRouter>
       </div>

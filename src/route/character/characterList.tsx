@@ -1,20 +1,32 @@
 import { ClassIcon } from '../../component/IconReader';
 import { useState , useRef, useEffect} from 'react';
 import styles from './characterList.module.css';
+import { useNavigate } from 'react-router-dom';
+import { useCharacterNavStore } from '../../store/characterNav.store';
 
 export default function CharacterList(){
 
     const [nowClass, setClass] = useState(0);
-    const className = ["전체", "기사", "창술사", "궁사", "마법사", "주술사", "치유사"];
+    const [nowClassId, setClassId] = useState("adventurer00");
+    // 테마 선택으로 스크롤 초기화
     const cardView = useRef<HTMLDivElement | null>(null);
-    const onClickClass = (id: number) => {
+    const onClickClass = (id: number, type: string) => {
         if(!cardView.current) return;
         // 스크롤 초기화
         cardView.current.scrollTop = 0;
         setClass(id);
+        setClassId(type);
     }
 
-    // 드래그 스크롤링
+    // 캐릭터 상세로 넘어가기
+    const navigater = useNavigate();
+    const setCharacterId = useCharacterNavStore((store) => store.setCharacterId);
+    const MoveDetail = (id: number, type: string) => {
+        setCharacterId(id, type);
+        navigater("/character/detail");
+    };
+
+    // 드래그로 스크롤 하기 
     const speed = 1.5;
     const isDragging = useRef<boolean>(false);
     const startY = useRef<number>(0);
@@ -70,11 +82,13 @@ export default function CharacterList(){
 
     return (
         <div className={styles.characterContainer}>
+            {/* 배경화면 */}
+            <div className={styles.pageBg} />
             {/* 좌측 목록 */}
             <div className={styles.leftListContainer}>
                 {
                     ClassIcon.map((c, idx) => (
-                        <div onClick={()=>onClickClass(idx)} className={`${styles.leftList} ${nowClass === idx ? styles.classSelected : ""}`}>
+                        <div onClick={()=>onClickClass(idx, c.id)} className={`${styles.leftList} ${nowClass === idx ? styles.classSelected : ""}`}>
                             <img alt="" className={`${styles.listIcon} ${nowClass === idx ? styles.listIconSelected : ""}`} src={c.image} />
                             <span className={styles.listTitle}>{c.name}</span>
                         </div>
@@ -93,8 +107,8 @@ export default function CharacterList(){
                 >
                 {
                     Array.from({length : 50}).map((_, i) => (
-                        <div key={i} className={styles.characterItem}>
-                            {className[nowClass]} { i + 1 }
+                        <div key={i} onClick={() => MoveDetail(i, nowClassId)} className={styles.characterCard}>
+                            { i + 1 }
                         </div>
                     ))
                 }

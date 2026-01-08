@@ -23,38 +23,46 @@ export const ResourceIcon = [
 export const ClassIcon = [
     // 클래스별 심볼 아이콘
     {
-        id : "adventurer01",
+        id : "adventurer00",
         name : "전체",
         image : "/Icon/symbol_adventurer.png"
     },
     {
-        id : "sword01",
+        id : "knight00",
         name : "기사",
         image: "/Icon/symbol_sword.png"
     },
     {
-        id : "lance01",
+        id : "lancer00",
         name : "창술사",
         image: "/Icon/symbol_lance.png"
     },
     {
-        id : "bow01",
+        id : "archer00",
         name : "궁사",
         image: "/Icon/symbol_bow.png"
     },
     {
-        id : "magia01",
+        id : "magia00",
         name : "마법사",
         image: "/Icon/symbol_magia.png"
     },
     {
-        id : "shaman01",
+        id : "shaman00",
         name : "주술사",
         image: "/Icon/symbol_shaman.png"
     },
     {
-        id : "cross01",
+        id : "priest00",
         name : "치유사",
         image: "/Icon/symbol_holy.png"
     },
 ];
+
+export const DetailIcon = [
+    {
+        id : "normal01",
+        name : "기본",
+        image : "/Icon/symbol_normal.png"
+    }
+]

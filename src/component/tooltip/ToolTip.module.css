@@ -1,0 +1,48 @@
+/****************
+tool tip css
+*****************/
+
+.tooltipContainer {
+    position: relative;
+    display: inline-flex;
+}
+
+/* 틀 */
+.tooltip {
+    position: absolute;
+    bottom: 20%;
+    right: 100%;
+
+    min-width: 250px;
+    max-width: 600px;
+    padding: 20px 10px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(60, 60, 60, 0.95),
+        rgba(25, 25, 25, 0.95)
+    );
+    border: 1px solid rgba(200, 200, 200, 0.25);
+    border-radius: 10px;
+
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.8),
+                0 6px 14px rgba(0,0,0,0.8);
+
+    color: rgba(234, 234, 234, 1);
+
+    font-size: 20px;
+    pointer-events: none;
+    z-index: 1000;
+}
+/* 제목 */
+.tooltipTitle {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: rgba(255, 211, 106, 1);
+    text-shadow: 0 0 4px rgba(255, 211, 106, 0.8);
+}
+
+/* 내용 */ 
+.tooltipExplain {
+    color:rgba(208, 208, 208, 1);
+}
