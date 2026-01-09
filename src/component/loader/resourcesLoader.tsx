@@ -1,5 +1,5 @@
-import rawResources from '../data/resources.json';
-import { useResourceStore } from "../store/resource.store";
+import rawResources from '../../data/resources.json';
+import { useResourceStore } from "../../store/resource.store";
 
 interface Resource {
     id: string;

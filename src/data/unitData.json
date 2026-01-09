@@ -1,0 +1,45 @@
+{
+    "unit" : [
+        {
+            "id": 1,
+            "name": "검사",
+            "rarity": "견습",
+            "stats": {
+                "hp": 50,
+                "defense": 7,
+                "attack": 8,
+                "range": 1,
+                "moveSpeed": 1,
+                "attackSpeed": 1,
+                "criticalChance": 10,
+                "criticalDamage": 100
+            },
+            "attackType": "Physical",
+            "targetType": "Single",
+            "synergy": ["기사", "새내기", "모험의 시작"],
+            "combineMaterial": [""],
+            "combineResult": ["1+1-11"]
+        },
+        {
+            "id": 2,
+            "name": "창술사",
+            "rarity": "견습",
+            "stats": {
+                "hp": 50,
+                "defense": 3,
+                "attack": 12,
+                "range": 1,
+                "moveSpeed": 1,
+                "attackSpeed": 1,
+                "criticalChance": 10,
+                "criticalDamage": 100
+            },
+            "attackType": "Physical",
+            "targetType": "Single",
+            "synergy": ["창술사", "새내기", "모험의 시작2"],
+            "combineMaterial": [""],
+            "combineResult": ["1+2-13"]
+        }
+    ]
+ 
+}

@@ -1,8 +1,9 @@
-import { ClassIcon } from '../../component/IconReader';
+import { ClassIcon } from '../../component/loader/IconReader';
 import { useState , useRef, useEffect} from 'react';
 import styles from './characterList.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useCharacterNavStore } from '../../store/characterNav.store';
+import { useUnitDataStore } from '../../store/unitData.store';
 
 export default function CharacterList(){
 
@@ -22,9 +23,16 @@ export default function CharacterList(){
     const navigater = useNavigate();
     const setCharacterId = useCharacterNavStore((store) => store.setCharacterId);
     const MoveDetail = (id: number, type: string) => {
+        // id에 해당하는 allUnit에서의 순서를 알아야함
+        // ex -> id : 11 : allUnit[6] 임 -> 순회하면서 내 id를 찾기에는 늦지 않을까 싶다.
+        // unit data에 unit의 id로 접근할 수 있도록 저장 자체를 바꿔보자
         setCharacterId(id, type);
         navigater("/character/detail");
     };
+
+    // 캐릭터 목록 확인하기
+    const allUnit = useUnitDataStore((s) => s.data);
+    console.log(allUnit[0].name);
 
     // 드래그로 스크롤 하기 
     const speed = 1.5;

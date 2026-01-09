@@ -1,5 +1,5 @@
 import styles from './Lobby.module.css';
-import ParalloxBg from '../../component/ParalloxBg';
+import ParalloxBg from '../../component/paralloxBg/ParalloxBg';
 import { useNavigate } from 'react-router-dom';
 
 export default function GameLobby() {
@@ -8,6 +8,9 @@ export default function GameLobby() {
     const navigater = useNavigate();
     const moveCharacter = () =>{
         navigater('/character');
+    }
+    const moveUpgrade = () => {
+        navigater('/upgrade');
     }
 
     return (
@@ -39,7 +42,7 @@ export default function GameLobby() {
                 <div className={styles.subMenuCol}>
                     <div className={`${styles.box} ${styles.smallBtn}`}>성물</div>
                     <div className={`${styles.box} ${styles.smallBtn}`}>스킬</div>
-                    <div className={`${styles.box} ${styles.smallBtn}`}>강화창</div>
+                    <div onClick={moveUpgrade} className={`${styles.box} ${styles.smallBtn}`}>강화창</div>
                 </div>
             </div>
 

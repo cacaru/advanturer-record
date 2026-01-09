@@ -9,7 +9,3 @@ export interface ResourceValue {
     name: string;
     image: string;
 }
-
-export interface unitData {
-    
-}

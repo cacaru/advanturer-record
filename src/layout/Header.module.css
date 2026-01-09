@@ -33,9 +33,16 @@ header css
     height: 60px;
 }
 
-.topRight {
+.topMid {
     position: absolute;
     right: 16%;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.topRight {
+    position: absolute;
+    right: 5%;
     padding: 5px 10px;
     display: flex;
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useResourceStore } from '../store/resource.store';
-import { ResourceIcon } from '../component/IconReader';
+import { ResourceIcon } from '../component/loader/IconReader';
 import styles from './Header.module.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ResourceValue } from '../types/resource';
@@ -38,37 +38,37 @@ export default function Header() {
                 break;
             case "/character/detail":
                 path = "/character";
+                break;
+            case "/upgrade":
+                path = "/";
+                break;
         }
         navigater(path);
     }
 
+    const moveHome = () => navigater("/");
     return (
         <header className={styles.appHeader}>
-            {/* 1. 상단 왼쪽 : 레벨 */}
+            {/* 1. 상단 왼쪽 : 레벨 / 뒤로가기 */}
             {   cpath === "/" && (
                     <div className={`${styles.box} ${styles.topLeft}`}>
                         레벨
                     </div>
                 )
             }
-            {   cpath === "/character" && (
+            {   (cpath === "/character/detail" ||
+                 cpath === "/upgrade" ||
+                 cpath === "/character") && (
                 <div className={styles.topLeft}>
                     <div className={styles.backBtn} onClick={MoveBack}>
                         뒤로 가기 
                     </div>
                 </div>
             )}
-            {   cpath === "/character/detail" && (
-                <div className={styles.topLeft}>
-                    <div className={styles.backBtn} onClick={MoveBack}>
-                        돌아 가기
-                    </div>
-                </div>
-            )}
             
 
-            {/* 2. 상단 오른쪽 : 재화 표시 */}
-            <div className={`${styles.topRight}`}>
+            {/* 2. 상단 중앙 : 재화 표시 */}
+            <div className={`${styles.topMid}`}>
             {
                 resource_value.map((item) => (
                 <div className={styles.resoruceBox}>
@@ -80,6 +80,18 @@ export default function Header() {
                 ))
             }
             </div>
+
+            {/* 3. 상단 오른쪽 : 홈 버튼 */}
+            {
+                cpath !== "/" && (
+                    <div className={styles.topRight}>
+                        <div className={styles.backBtn} onClick={moveHome}>
+                            홈으로
+                        </div>
+                    </div>
+                )
+            }
+            
         </header>
     );
 }

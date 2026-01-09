@@ -13,12 +13,12 @@
 }
 
 .container {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    top: 0;
-    left: 50%;
-    transform-origin: top center;
-    background-color: gray;
-    font-family: Arial sans-serif;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  left: 50%;
+  transform-origin: top center;
+  background-color: gray;
+  font-family: Arial sans-serif;
 }

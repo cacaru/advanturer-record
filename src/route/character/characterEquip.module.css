@@ -1,0 +1,45 @@
+/***************************
+캐릭터 장비 현황 영역 css
+***************************/
+/* 장비 착용 이미지 부분 */
+.equipArea {
+    position: absolute;
+    left: 2%;
+    width: 40%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+/* 착용 스텟 표시 부분 */
+.resultArea {
+    position: absolute;
+    right: 2%;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    gap: 1%;
+    grid-template-rows: 6% 72% 21%;
+}
+
+/* 착용으로 인한 스텟 변화 영역 */
+.stateArea {
+    border: 2px solid blue;
+    text-align: center;
+}
+.stateTitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.stateRow {
+    border: 2px solid firebrick;
+}
+
+
+.btnArea {
+    border: 2px solid blue;
+}
+
+

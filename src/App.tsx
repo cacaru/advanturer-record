@@ -2,11 +2,13 @@ import { useEffect , useRef } from 'react';
 import './App.css';
 import Lobby from './route/lobby/Lobby';
 import CharacterList from './route/character/characterList';
-import { loadLocalResource } from './component/resourcesLoader';
+import { loadLocalResource } from './component/loader/resourcesLoader';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './layout/Header';
 import CharacterDetail from './route/character/characterDetail';
 import Modal from './component/modal/Modal';
+import UpgradeLobby from './route/upgrade/UpgradeLobby';
+import { loadUnitDefaultData } from './component/loader/unitInfoLoader';
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
   // resource 불러오기
   useEffect(() => {
     loadLocalResource();
+    loadUnitDefaultData();
   }, []);
    
   // 스크린 1920*1080 비율 고정
@@ -48,6 +51,7 @@ function App() {
             <Route path="/" element={<Lobby />} />
             <Route path="/character" element={<CharacterList />} />
             <Route path="/character/detail" element={<CharacterDetail />} />
+            <Route path="/upgrade" element={<UpgradeLobby />} />
           </Routes>
         </BrowserRouter>
       </div>

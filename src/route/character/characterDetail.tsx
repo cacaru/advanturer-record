@@ -1,5 +1,6 @@
-import { DetailIcon } from "../../component/IconReader";
+import { DetailIcon } from "../../component/loader/IconReader";
 import styles from "./characterDetail.module.css"
+import CharacterEquip from "./characterEquip";
 import CharacterInfo from "./characterInfo";
 import { useState } from "react";
 
@@ -54,7 +55,7 @@ export default function CharacterDetail(){
                     showId === "info" && <CharacterInfo />
                 }
                 {
-                    showId === "equip" && <div> 장비 </div>
+                    showId === "equip" && <CharacterEquip />
                 }
                 {
                     showId === "comb" && <div> 조합식 </div>

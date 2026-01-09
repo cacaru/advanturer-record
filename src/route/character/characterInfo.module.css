@@ -86,11 +86,17 @@
     border: 2px solid black;
 }
 
-.infoValue,
-.infoItemTitle {
+.infoValue {
     display: flex;
     align-items: center;
     justify-self: center;
+}
+
+.infoItemTitle {
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    margin-left: 10px;
 }
 
 /* 하단 */
