@@ -1,17 +1,78 @@
 import styles from "./characterInfo.module.css";
 import ToolTip from "../../component/tooltip/ToolTip";
 import { useModalStore } from "../../store/modal.store";
-import { useCharacterNavStore } from "../../store/characterNav.store";
+import { useUnitNavStore } from "../../store/unitNav.store";
+import { useNavigate } from "react-router-dom";
+import { langT } from "../../locale";
+import { RarityTypeUI } from "../../ui/text/rarityType.ui";
+import { AttackTypeUI } from "../../ui/text/attackType.ui";
 
 export default function CharacterInfo() {
-    const { cid }= useCharacterNavStore();
+
     const openModal = useModalStore((s) => s.openModal);
+
+    const data = useUnitNavStore().cdata;
+    // data가 null 이면 이전 페이지로 돌아감
+    const navigater = useNavigate();
+    if(data === null){
+        navigater('/character');
+    }
+    
+    const getId = () => {
+        if(!data) return 0;
+        return data.id;
+    }
+
+    const getRarityLabel = () => {
+        if(!data) return "";
+        return langT(RarityTypeUI[data.rarity]);
+    }
+
+    const getAttackTypeLabel = () => {
+        if(!data) return "";
+        return langT(AttackTypeUI[data.attackType]);
+    }
+
+    const getName = () => { if(!data) return ""; return data.name; }
+    
+    const getHp = () => {
+        if(!data) return 0;
+        return data.stats.hp;
+    }
+    const getDefense = () => {
+        if(!data) return 0;
+        return data.stats.defense;
+    }
+    const getAttackValue = () => {
+        if(!data) return 0;
+        return data.stats.attack;
+    }
+    const getAttackSpeedValue = () => {
+        if(!data) return 0;
+        return data.stats.attackSpeed;
+    }
+    const getRange = () => {
+        if(!data) return 0;
+        return data.stats.range;
+    }
+    const getMoveSpeed = () => {
+        if(!data) return 0;
+        return data.stats.moveSpeed;
+    }
+    const getCriticalChance = () => {
+        if(!data) return 0;
+        return data.stats.criticalChance;
+    }
+    const getCriticalDamage = () => {
+        if(!data) return 0;
+        return data.stats.criticalDamage;
+    }
 
     return(
         <div className={styles.mainContainer}>
             {/* 중앙 - 좌측 일러스트 */}
             <div className={styles.illustArea}>
-                일러스트 {cid}
+                일러스트 {getId()}
             </div>
             {/* 중앙 - 우측 스테이터스 및 스킬 -> 클릭하면 모달 팝업 */}
             <div className={styles.infoArea}>
@@ -19,11 +80,12 @@ export default function CharacterInfo() {
                 <div className={styles.infoTop} >
                     <div className={styles.infoTopTop}>
                         <div className={styles.infoName}>
-                            등급 + 공격타입
+                            { getRarityLabel() }
+                            {getAttackTypeLabel()}
                         </div>
                         <div />
                         <div className={styles.infoGrade}>
-                            이름
+                            {getName()}
                         </div>
                     </div>
                     <div className={styles.infoTopBottom}>
@@ -41,72 +103,72 @@ export default function CharacterInfo() {
                     <div className={styles.infoMidRow} >
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                체력
+                                {langT("stats.hp")}
                             </div>
                             <div className={styles.infoValue}>
-                                100
+                                {getHp()}
                             </div>
                         </div>
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                방어력
+                                {langT("stats.defense")}
                             </div>
                             <div className={styles.infoValue}>
-                                100
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.infoMidRow} >
-                        <div className={styles.infoMidItem}>
-                            <div className={styles.infoItemTitle}>
-                                공격력
-                            </div>
-                            <div className={styles.infoValue}>
-                                100
-                            </div>
-                        </div>
-                        <div className={styles.infoMidItem}>
-                            <div className={styles.infoItemTitle}>
-                                사거리
-                            </div>
-                            <div className={styles.infoValue}>
-                                1
+                                {getDefense()}
                             </div>
                         </div>
                     </div>
                     <div className={styles.infoMidRow} >
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                공격속도
+                                {langT("stats.attack")}
                             </div>
                             <div className={styles.infoValue}>
-                                1
+                                {getAttackValue()}
                             </div>
                         </div>
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                이동속도
+                                {langT("stats.range")}
                             </div>
                             <div className={styles.infoValue}>
-                                1
+                                {getRange()}
                             </div>
                         </div>
                     </div>
                     <div className={styles.infoMidRow} >
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                치확
+                                {langT("stats.attackSpeed")}
                             </div>
                             <div className={styles.infoValue}>
-                                10
+                                {getAttackSpeedValue()}
                             </div>
                         </div>
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                치피
+                                {langT("stats.moveSpeed")}
                             </div>
                             <div className={styles.infoValue}>
-                                100
+                                {getMoveSpeed()}
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.infoMidRow} >
+                        <div className={styles.infoMidItem}>
+                            <div className={styles.infoItemTitle}>
+                                {langT("stats.criticalChance")}
+                            </div>
+                            <div className={styles.infoValue}>
+                                {getCriticalChance()}
+                            </div>
+                        </div>
+                        <div className={styles.infoMidItem}>
+                            <div className={styles.infoItemTitle}>
+                                {langT("stats.criticalDamage")}
+                            </div>
+                            <div className={styles.infoValue}>
+                                {getCriticalDamage()}
                             </div>
                         </div>
                     </div>

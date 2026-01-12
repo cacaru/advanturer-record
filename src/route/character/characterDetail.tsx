@@ -29,6 +29,7 @@ export default function CharacterDetail(){
     const changeShow = (id: string) => {
         setShowId(id);
     }
+
     return(
         <div>
             {/* 배경화면 */}

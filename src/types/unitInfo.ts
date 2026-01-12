@@ -1,21 +1,43 @@
+import { AttackType } from "./attckType.type";
+import { ClassType } from "./class.type";
+import { RarityType } from "./rarityType.type";
+import { TargetType } from "./targetType.type";
+import { Stats } from "./stats.type";
 
 export interface IUnitData {
     id: number;
     name: string;
+    rarity: RarityType;
+    class: ClassType;
+    stats: Stats;
+    equip: {
+        instance: Array<number>;
+        accessories: Array<number>;
+        relic: number;
+    };
+    attackType: AttackType;
+    targetType: TargetType;
+    synergy: Array<number>;
+    combineMaterial: Array<string>;
+    combineResult: Array<string>;
+
+    isSummoned?: boolean;
+}
+
+export interface JsonUnitData {
+    id: number;
+    name: string;
     rarity: string;
-    stats: {
-        hp: number;
-        defense: number;
-        attack: number;
-        range: number;
-        moveSpeed: number;
-        attackSpeed: number;
-        criticalChance: number;
-        criticalDamage: number;
+    class: string;
+    stats: Stats;
+    equip: {
+        instance: Array<number>;
+        accessories: Array<number>;
+        relic: number;
     };
     attackType: string;
     targetType: string;
-    synergy: Array<string>;
+    synergy: Array<number>;
     combineMaterial: Array<string>;
     combineResult: Array<string>;
 

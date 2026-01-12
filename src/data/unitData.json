@@ -3,7 +3,8 @@
         {
             "id": 1,
             "name": "검사",
-            "rarity": "견습",
+            "rarity": "Apprentice",
+            "class": "Knight",
             "stats": {
                 "hp": 50,
                 "defense": 7,
@@ -14,16 +15,22 @@
                 "criticalChance": 10,
                 "criticalDamage": 100
             },
+            "equip": {
+                "instance": [],
+                "accessories": [],
+                "relic": 0
+            },
             "attackType": "Physical",
             "targetType": "Single",
-            "synergy": ["기사", "새내기", "모험의 시작"],
+            "synergy": [1,2,3],
             "combineMaterial": [""],
             "combineResult": ["1+1-11"]
         },
         {
-            "id": 2,
+            "id": 20,
             "name": "창술사",
-            "rarity": "견습",
+            "rarity": "Apprentice",
+            "class": "Lancer",
             "stats": {
                 "hp": 50,
                 "defense": 3,
@@ -34,9 +41,14 @@
                 "criticalChance": 10,
                 "criticalDamage": 100
             },
+            "equip": {
+                "instance": [],
+                "accessories": [],
+                "relic": 0
+            },
             "attackType": "Physical",
             "targetType": "Single",
-            "synergy": ["창술사", "새내기", "모험의 시작2"],
+            "synergy": [],
             "combineMaterial": [""],
             "combineResult": ["1+2-13"]
         }

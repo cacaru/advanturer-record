@@ -2,8 +2,8 @@ import { ClassIcon } from '../../component/loader/IconReader';
 import { useState , useRef, useEffect} from 'react';
 import styles from './characterList.module.css';
 import { useNavigate } from 'react-router-dom';
-import { useCharacterNavStore } from '../../store/characterNav.store';
 import { useUnitDataStore } from '../../store/unitData.store';
+import { selectUnit } from '../../component/loader/selectUnit';
 
 export default function CharacterList(){
 
@@ -21,18 +21,17 @@ export default function CharacterList(){
 
     // 캐릭터 상세로 넘어가기
     const navigater = useNavigate();
-    const setCharacterId = useCharacterNavStore((store) => store.setCharacterId);
     const MoveDetail = (id: number, type: string) => {
         // id에 해당하는 allUnit에서의 순서를 알아야함
         // ex -> id : 11 : allUnit[6] 임 -> 순회하면서 내 id를 찾기에는 늦지 않을까 싶다.
         // unit data에 unit의 id로 접근할 수 있도록 저장 자체를 바꿔보자
-        setCharacterId(id, type);
+        selectUnit(id, type);
         navigater("/character/detail");
     };
 
     // 캐릭터 목록 확인하기
     const allUnit = useUnitDataStore((s) => s.data);
-    console.log(allUnit[0].name);
+    // 목록만큼만 출력
 
     // 드래그로 스크롤 하기 
     const speed = 1.5;
@@ -114,9 +113,9 @@ export default function CharacterList(){
                 onMouseMove={handleMouseMove}
                 >
                 {
-                    Array.from({length : 50}).map((_, i) => (
-                        <div key={i} onClick={() => MoveDetail(i, nowClassId)} className={styles.characterCard}>
-                            { i + 1 }
+                    allUnit.map((u, i) => (
+                        <div key={u.id} onClick={() => MoveDetail(u.id, nowClassId)} className={styles.characterCard}>
+                            { u.id }
                         </div>
                     ))
                 }

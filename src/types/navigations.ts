@@ -1,8 +1,9 @@
+import { IUnitData } from "./unitInfo";
 
-export interface CharacterNavState{
+export interface UnitNavState{
     cid: number | null;
     ctype: string | null;
-    setCharacterId: (id:number, type: string) => void;
-    clearCharacterId: () => void;
+    cdata: IUnitData | null;
+    setUnit: (id:number, type: string, data: IUnitData | null) => void;
+    clearUnit: () => void;
 }
-
