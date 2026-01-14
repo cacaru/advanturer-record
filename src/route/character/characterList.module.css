@@ -15,12 +15,46 @@ character List Page css
 /* 좌측 목록 */
 .leftListContainer {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 30px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
     padding-left: 16px;
+}
+
+.sortItem {
+    font-weight: bold;
+    font-size: 28px;
+    color:white;
+
+    width: 200px;
+    height: 50px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    border: 2px solid rgba(180, 150, 100, 0.7);
+    border-radius: 12px;
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    cursor: pointer;
+}
+
+.sortImg {
+    justify-self: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.rotateDown {
+    transform: rotateZ(180deg);
+    transition: transform 0.3s ease;
+}
+.rotateUp {
+    transform: rotateZ(0deg);
+    transition: transform 0.3s ease;
 }
 
 .leftList {

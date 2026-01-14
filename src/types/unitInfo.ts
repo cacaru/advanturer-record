@@ -1,48 +1,43 @@
 import { AttackType } from "./attckType.type";
 import { ClassType } from "./class.type";
 import { RarityType } from "./rarityType.type";
-import { TargetType } from "./targetType.type";
-import { Stats } from "./stats.type";
+import { UnitStats } from "./stats.type";
+
 
 export interface IUnitData {
-    id: number;
-    name: string;
-    rarity: RarityType;
-    class: ClassType;
-    stats: Stats;
-    equip: {
-        instance: Array<number>;
-        accessories: Array<number>;
-        relic: number;
-    };
-    attackType: AttackType;
-    targetType: TargetType;
-    synergy: Array<number>;
-    combineMaterial: Array<string>;
-    combineResult: Array<string>;
-
-    isSummoned?: boolean;
+    id: number,
+    name: string,
+    rarity: RarityType,
+    class: ClassType,
+    stats: UnitStats,
+    attackType: AttackType,
+    synergy: Array<string>
+    equipAccessories: Array<number>
+    haveSkill: Array<number>
 }
 
 export interface JsonUnitData {
-    id: number;
-    name: string;
-    rarity: string;
-    class: string;
-    stats: Stats;
-    equip: {
-        instance: Array<number>;
-        accessories: Array<number>;
-        relic: number;
-    };
-    attackType: string;
-    targetType: string;
-    synergy: Array<number>;
-    combineMaterial: Array<string>;
-    combineResult: Array<string>;
-
-    isSummoned?: boolean;
+    id: number,
+    name: string,
+    rarity: string,
+    class: string,
+    attack: number,
+    defense: number,
+    hp: number,
+    attackSpeed: number,
+    moveSpeed: number,
+    range: number,
+    criticalChance: number,
+    criticalDamage: number,
+    attackType: string,
+    synergy: string,
+    equipAccessories: string,
+    haveSkill: string
 }
+
+// 업그레이드 변수
+// 업그레이드 시 올라갈 값들
+// 1강마다 몇씩 올라갈지 정해야 할 듯
 
 // 대응 이미지
 // 대응 초상화
@@ -55,7 +50,6 @@ export interface JsonUnitData {
 // 무기 방어구 2개의 항목을 인게임 안에서 획득 or 제작하도록 변경
 
 // 스킬 목록
-// 업그레이드 변수
-// 업그레이드 시 올라갈 값들
+
 // 시너지 대응 구조체
 // 조합식 대응 구조체

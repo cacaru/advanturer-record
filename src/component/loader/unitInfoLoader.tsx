@@ -7,29 +7,28 @@ import { AttackType, AttackTypeKey } from "../../types/attckType.type";
 import { AttackTypeLabel } from "../../domain/attckType.mapper";
 import { ClassType, ClassKey} from "../../types/class.type";
 import { ClassTypeLabel } from "../../domain/class.mapper";
-import { TargetType, TargetTypeKey } from "../../types/targetType.type";
-import { TargetTypeLabel } from "../../domain/targetType.mapper";
+import { UnitStats } from "../../types/stats.type";
 
 export async function loadUnitDefaultData() {
-    const unitTypeConvert: IUnitData[] = rawData.unit.map((unit) => convertUnitData(unit));
+    const unitTypeConvert: IUnitData[] = rawData.map((unit) => convertUnitData(unit));
+    // convert 된 유닛은 id 기준으로 정렬해야함
+    unitTypeConvert.sort((a,b) => a.id - b.id);
     useUnitDataStore.getState().setData(unitTypeConvert);
 }
 
-function convertUnitData(json: JsonUnitData) {
+
+function convertUnitData(json: JsonUnitData): IUnitData {
     return{
         id: json.id,
         name: json.name,
         rarity: rarityTypeChecker(json.rarity),
         class: classTypeChecker(json.class),
-        stats: json.stats,
-        equip: json.equip,
+        stats: convertUnitStat(json.hp, json.attack, json.defense, json.range, json.attackSpeed, json.moveSpeed, json.criticalChance, json.criticalDamage),
         attackType: attackTypeChecker(json.attackType),
-        targetType: targetTypeChecker(json.targetType),
-        synergy: json.synergy,
-        combineMaterial: json.combineMaterial,
-        combineResult: json.combineResult,
-        isSummoned: json.isSummoned
-    }
+        synergy: json.synergy.split(","),
+        equipAccessories: convertStringToNumArray(json.equipAccessories),
+        haveSkill: convertStringToNumArray(json.haveSkill)
+    };
 }
 
 // 등급 값 정상 여부 체크
@@ -70,14 +69,37 @@ function attackTypeChecker(str: string) {
     return AttackTypeLabel[str];
 }
 
-// 타겟 선정 타입 정상 여부 체크
-function isTargetType(str: string): str is TargetTypeKey {
-    return str in TargetTypeLabel;
+// 스탯 변환
+function convertUnitStat(
+    health: number,
+    attack: number, 
+    defense: number, 
+    range: number,
+    attackSpeed: number,
+    moveSpeed: number,
+    criticalChance: number,
+    criticalDamage: number
+):UnitStats {
+    return {
+        health,
+        defense,
+        attack,
+        range,
+        moveSpeed,
+        attackSpeed,
+        criticalChance,
+        criticalDamage
+    };
 }
-function targetTypeChecker(str: string) {
-    if(!isTargetType(str)){
-        console.warn(`"적 타격 범위"에서 읽을 수 없는 값 ${str}이(가) 입력됨`);
-        return TargetType._;
-    }
-    return TargetTypeLabel[str];
+
+// 시너지 어레이화
+// 소지 스킬 어레이화
+function convertStringToNumArray(str: string) {
+    // string 분해해서 numberarray화
+    const stra = str.split(",");
+    const result: number[] = [];
+    stra.forEach((v) => {
+        result.push(Number.parseInt(v));
+    })
+    return result;
 }

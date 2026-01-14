@@ -37,7 +37,7 @@ export default function CharacterInfo() {
     
     const getHp = () => {
         if(!data) return 0;
-        return data.stats.hp;
+        return data.stats.health;
     }
     const getDefense = () => {
         if(!data) return 0;
@@ -93,7 +93,8 @@ export default function CharacterInfo() {
                             레벨 
                         </div>
                         <div className={styles.infoExpBar}>
-                            경험치 바 
+                            {// 경험치 바 들어올 곳
+                            }
                         </div>
                     </div>
                 </div>
@@ -103,7 +104,7 @@ export default function CharacterInfo() {
                     <div className={styles.infoMidRow} >
                         <div className={styles.infoMidItem}>
                             <div className={styles.infoItemTitle}>
-                                {langT("stats.hp")}
+                                {langT("stats.health")}
                             </div>
                             <div className={styles.infoValue}>
                                 {getHp()}
@@ -210,10 +211,10 @@ export default function CharacterInfo() {
                     </div>  
                     <div className={styles.infoBottomBottom}>
                         <div className={styles.infoSkillArea} >
-                            <img className={styles.infoSkill} src="/Icon/검.png"/>
-                            <img className={styles.infoSkill} src="/Icon/검.png"/>
-                            <img className={styles.infoSkill} src="/Icon/검.png"/>
-                            <img className={styles.infoSkill} src="/Icon/검.png"/>
+                            <img alt="Icon" className={styles.infoSkill} src="/Icon/검.png"/>
+                            <img alt="Icon" className={styles.infoSkill} src="/Icon/검.png"/>
+                            <img alt="Icon" className={styles.infoSkill} src="/Icon/검.png"/>
+                            <img alt="Icon" className={styles.infoSkill} src="/Icon/검.png"/>
                         </div>
                     </div>
                 </div>

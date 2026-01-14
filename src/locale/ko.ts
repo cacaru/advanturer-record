@@ -30,7 +30,7 @@ export const ko = {
     "targetType.none": "없음",
 
     // --- stats ---
-    "stats.hp": "체력",
+    "stats.health": "체력",
     "stats.defense": "방어력",
     "stats.attack": "공격력",
     "stats.range": "사거리",

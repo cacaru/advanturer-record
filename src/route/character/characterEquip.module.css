@@ -8,6 +8,34 @@
     width: 40%;
     height: 100%;
     border: 2px solid blue;
+    display: grid;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+.itemArea {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+}
+.itemText {
+    height: 85%;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid green;
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+.name {
+    color: white;
+}
+
+.itemImg {
+    width: 180px;
+    height:180px;
+    border: 1px solid red;
+}
+.itemValue {
+    color: rgb(0, 77, 0);
 }
 
 /* 착용 스텟 표시 부분 */
@@ -22,9 +50,12 @@
 }
 
 /* 착용으로 인한 스텟 변화 영역 */
+
 .stateArea {
     border: 2px solid blue;
     text-align: center;
+    display: grid;
+    grid-template-rows: repeat(8);
 }
 .stateTitle {
     font-size: 30px;
@@ -34,9 +65,34 @@
 }
 
 .stateRow {
+    display: grid;    
+    grid-template-columns: 50% 50%;
     border: 2px solid firebrick;
 }
 
+.infoItemTitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    color: white;
+}
+
+.infoValue {
+    display: grid;
+    grid-template-columns: 33% 1% 33%;
+    align-items: center;
+    color:white;
+}
+
+.valueOri {
+    margin-right: 10px;
+}
+
+.valueConnection,
+.valueAdd {
+    color: green;
+}
 
 .btnArea {
     border: 2px solid blue;

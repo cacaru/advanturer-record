@@ -1,5 +1,5 @@
-export interface Stats {
-    hp: number;
+export interface UnitStats {
+    health: number;
     defense: number;
     attack: number;
     range: number;
@@ -10,7 +10,7 @@ export interface Stats {
 }
 
 export const STAT_KEY = [
-    "hp",
+    "health",
     "defense",
     "attack",
     "range",

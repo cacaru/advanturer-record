@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { DetailIcon } from "../../component/loader/IconReader";
 import styles from "./characterDetail.module.css"
 import CharacterEquip from "./characterEquip";
 import CharacterInfo from "./characterInfo";
 import { useState } from "react";
+import CharacterComb from "./characterComb";
 
 export default function CharacterDetail(){
 
@@ -24,9 +26,13 @@ export default function CharacterDetail(){
             name: "강화"
         }
     ];
-
+    const navigator = useNavigate();
     const [showId, setShowId] = useState<string>("info");
     const changeShow = (id: string) => {
+        if(id === "enforce"){
+            // 추후 캐릭터 강화창으로 이동해줄 예정
+            navigator("/upgrade");
+        }
         setShowId(id);
     }
 
@@ -59,12 +65,8 @@ export default function CharacterDetail(){
                     showId === "equip" && <CharacterEquip />
                 }
                 {
-                    showId === "comb" && <div> 조합식 </div>
+                    showId === "comb" &&  <CharacterComb />
                 }
-                {/** 중앙 - 장비
-                 * 현재 장비중인 장비창 보여주기**/}
-                {/** 중앙 - 조합
-                 * -> 조합식 보여주기**/}
             </div>
             
             {/** 중앙 - 강화

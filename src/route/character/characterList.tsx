@@ -1,23 +1,64 @@
 import { ClassIcon } from '../../component/loader/IconReader';
-import { useState , useRef, useEffect} from 'react';
+import { useState , useRef} from 'react';
 import styles from './characterList.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useUnitDataStore } from '../../store/unitData.store';
 import { selectUnit } from '../../component/loader/selectUnit';
+import { IUnitData } from '../../types/unitInfo';
+import { ClassTypeLabel } from '../../domain/class.mapper';
+
 
 export default function CharacterList(){
 
-    const [nowClass, setClass] = useState(0);
-    const [nowClassId, setClassId] = useState("adventurer00");
+    // 캐릭터 목록 확인하기
+    const allUnit = useUnitDataStore((s) => s.data);
+    const [showUnit, setShowUnit] = useState<Array<IUnitData>>(useUnitDataStore((s) => s.data));
+
+    // 목록 정렬 기준
+    const [isAsc, setIsAsc] = useState<boolean>(true);
+
+    // 현재 선택된 클래스
+    const [nowClass, setClass] = useState<number>(0);
+    const [nowClassId, setClassId] = useState<string>("All");
     // 테마 선택으로 스크롤 초기화
     const cardView = useRef<HTMLDivElement | null>(null);
     const onClickClass = (id: number, type: string) => {
         if(!cardView.current) return;
         // 스크롤 초기화
         cardView.current.scrollTop = 0;
+        // 보여주는 항목의 데이터를 변경해줘야함
         setClass(id);
         setClassId(type);
+
+        setShowUnit(setUnitList(type, isAsc));
+    };
+
+    const onSelectAsc = () => {
+        const asc = !isAsc;
+        setIsAsc(asc);
+        // 값 재정렬
+        setShowUnit(setUnitList(nowClassId, asc));
     }
+
+    const setUnitList = (type:string, asc: boolean) => {
+        // type :: 직업분류
+        // asc ::  정렬 방향
+        // stand :: 정렬 기준
+        var result: IUnitData[];
+        
+        // 데이터 분류
+        if(type === "All") result = allUnit;
+        else result = allUnit.filter( (unit) => unit.class === ClassTypeLabel[type]);
+
+        // 정렬
+        if(asc) {
+            result.sort((a,b) => a.rarity - b.rarity);
+        }
+        else {
+            result.sort((a,b) => b.rarity - a.rarity);
+        }   
+        return result;
+    };
 
     // 캐릭터 상세로 넘어가기
     const navigater = useNavigate();
@@ -28,10 +69,6 @@ export default function CharacterList(){
         selectUnit(id, type);
         navigater("/character/detail");
     };
-
-    // 캐릭터 목록 확인하기
-    const allUnit = useUnitDataStore((s) => s.data);
-    // 목록만큼만 출력
 
     // 드래그로 스크롤 하기 
     const speed = 1.5;
@@ -92,7 +129,12 @@ export default function CharacterList(){
             {/* 배경화면 */}
             <div className={styles.pageBg} />
             {/* 좌측 목록 */}
+            {/* 좌측 목록 상단에 정렬 기준 list만들기 */}
             <div className={styles.leftListContainer}>
+                <div onClick={onSelectAsc} className={styles.sortItem}>
+                    <div>정렬</div>
+                    <img alt="Icon" className={`${styles.sortImg} ${isAsc ? styles.rotateUp : styles.rotateDown}`} src="/Icon/ui_arrow.png"/>
+                </div>
                 {
                     ClassIcon.map((c, idx) => (
                         <div onClick={()=>onClickClass(idx, c.id)} className={`${styles.leftList} ${nowClass === idx ? styles.classSelected : ""}`}>
@@ -113,9 +155,14 @@ export default function CharacterList(){
                 onMouseMove={handleMouseMove}
                 >
                 {
-                    allUnit.map((u, i) => (
+                    showUnit.map((u, i) => (
                         <div key={u.id} onClick={() => MoveDetail(u.id, nowClassId)} className={styles.characterCard}>
-                            { u.id }
+                            <div>
+                                { u.id }
+                            </div>
+                            <div>
+                                { u.name } 
+                            </div>
                         </div>
                     ))
                 }

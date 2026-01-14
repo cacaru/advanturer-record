@@ -60,7 +60,7 @@
 .infoExpBar {
     width: 80%;
     padding-left: 120px;
-    height: 10px;
+    height: 15px;
     border: 1px solid blue;
     background-color: blueviolet;
 }
@@ -96,7 +96,7 @@
     display: flex;
     align-items: center;
     justify-self: left;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /* 하단 */
