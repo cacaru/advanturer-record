@@ -13,7 +13,13 @@ export async function loadUnitDefaultData() {
     const unitTypeConvert: IUnitData[] = rawData.map((unit) => convertUnitData(unit));
     // convert 된 유닛은 id 기준으로 정렬해야함
     unitTypeConvert.sort((a,b) => a.id - b.id);
-    useUnitDataStore.getState().setData(unitTypeConvert);
+    // 이 유닛 데이터도 id로 접근 가능하도록 변경해야하네요
+    const dataProcess: Record<number, IUnitData> = {};
+    unitTypeConvert.map((u) => {
+        dataProcess[u.id] = u;
+    })
+
+    useUnitDataStore.getState().setData(dataProcess);
 }
 
 
@@ -27,7 +33,8 @@ function convertUnitData(json: JsonUnitData): IUnitData {
         attackType: attackTypeChecker(json.attackType),
         synergy: json.synergy.split(","),
         equipAccessories: convertStringToNumArray(json.equipAccessories),
-        haveSkill: convertStringToNumArray(json.haveSkill)
+        haveSkill: convertStringToNumArray(json.haveSkill),
+        imgStr: json.imgStr
     };
 }
 

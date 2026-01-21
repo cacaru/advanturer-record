@@ -1,0 +1,73 @@
+/***************************
+캐릭터 조합 목록 보기 css
+***************************/
+.toArea {
+    position: absolute;
+    left: 2%;
+    width: 45%;
+    height: 100%;
+    border: 2px solid blue;
+}
+
+.fromArea {
+    position: absolute;
+    right: 2%;
+    width: 48%;
+    height: 100%;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.combineList {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 11.5%;
+    grid-auto-rows: 120px;
+    align-items: center;
+    border: 1px solid purple;
+}
+
+.combineListRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combineCell {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operator {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.rarityBorder {
+    background-image: url("../../../public/Icon/RaritySymbol/견습.png");
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unitIcon {
+    width: 80px;
+    height: 80px;
+}

@@ -9,6 +9,7 @@ import CharacterDetail from './route/character/characterDetail';
 import Modal from './component/modal/Modal';
 import UpgradeLobby from './route/upgrade/UpgradeLobby';
 import { loadUnitDefaultData } from './component/loader/unitInfoLoader';
+import { loadUnitCombineData } from './component/loader/unitCombLoader';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   useEffect(() => {
     loadLocalResource();
     loadUnitDefaultData();
+    loadUnitCombineData();
   }, []);
    
   // 스크린 1920*1080 비율 고정

@@ -15,7 +15,8 @@
       "attackType":"Physical",
       "synergy":"기사,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":101,
@@ -33,7 +34,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":102,
@@ -51,7 +53,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/04.png"
    },
    {
       "id":103,
@@ -69,7 +72,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/05.png"
    },
    {
       "id":201,
@@ -87,7 +91,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":202,
@@ -105,7 +110,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/02.png"
    },
    {
       "id":203,
@@ -123,7 +129,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/04.png"
    },
    {
       "id":204,
@@ -141,7 +148,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/05.png"
    },
    {
       "id":301,
@@ -159,7 +167,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":302,
@@ -177,7 +186,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/02.png"
    },
    {
       "id":303,
@@ -195,7 +205,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/04.png"
    },
    {
       "id":304,
@@ -213,7 +224,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/05.png"
    },
    {
       "id":305,
@@ -231,7 +243,8 @@
       "attackType":"Magical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/07.png"
    },
    {
       "id":401,
@@ -249,7 +262,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":402,
@@ -267,7 +281,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/02.png"
    },
    {
       "id":403,
@@ -285,7 +300,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/03.png"
    },
    {
       "id":404,
@@ -303,7 +319,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/04.png"
    },
    {
       "id":405,
@@ -321,7 +338,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/05.png"
    },
    {
       "id":406,
@@ -339,7 +357,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/06.png"
    },
    {
       "id":407,
@@ -357,7 +376,8 @@
       "attackType":"Magical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/07.png"
    },
    {
       "id":501,
@@ -375,7 +395,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/01.png"
    },
    {
       "id":502,
@@ -393,7 +414,8 @@
       "attackType":"Physical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/04.png"
    },
    {
       "id":503,
@@ -411,7 +433,8 @@
       "attackType":"Magical",
       "synergy":"기사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Knight/07.png"
    },
    {
       "id":11,
@@ -429,7 +452,8 @@
       "attackType":"Physical",
       "synergy":"창술사,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":111,
@@ -447,7 +471,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":112,
@@ -465,7 +490,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/04.png"
    },
    {
       "id":113,
@@ -483,7 +509,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/05.png"
    },
    {
       "id":211,
@@ -501,7 +528,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":212,
@@ -519,7 +547,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/02.png"
    },
    {
       "id":213,
@@ -537,7 +566,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/04.png"
    },
    {
       "id":214,
@@ -555,7 +585,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/05.png"
    },
    {
       "id":311,
@@ -573,7 +604,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":312,
@@ -591,7 +623,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/02.png"
    },
    {
       "id":313,
@@ -609,7 +642,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/04.png"
    },
    {
       "id":314,
@@ -627,7 +661,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/05.png"
    },
    {
       "id":315,
@@ -645,7 +680,8 @@
       "attackType":"Magical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/07.png"
    },
    {
       "id":411,
@@ -663,7 +699,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":412,
@@ -681,7 +718,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/02.png"
    },
    {
       "id":413,
@@ -699,7 +737,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/03.png"
    },
    {
       "id":414,
@@ -717,7 +756,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/04.png"
    },
    {
       "id":415,
@@ -735,7 +775,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/05.png"
    },
    {
       "id":416,
@@ -753,7 +794,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/06.png"
    },
    {
       "id":417,
@@ -771,7 +813,8 @@
       "attackType":"Magical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/07.png"
    },
    {
       "id":511,
@@ -789,7 +832,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/01.png"
    },
    {
       "id":512,
@@ -807,7 +851,8 @@
       "attackType":"Physical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/05.png"
    },
    {
       "id":513,
@@ -825,7 +870,8 @@
       "attackType":"Magical",
       "synergy":"창술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Lancer/07.png"
    },
    {
       "id":21,
@@ -843,7 +889,8 @@
       "attackType":"Physical",
       "synergy":"궁수,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":121,
@@ -861,7 +908,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":122,
@@ -879,7 +927,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/02.png"
    },
    {
       "id":123,
@@ -897,7 +946,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/04.png"
    },
    {
       "id":221,
@@ -915,7 +965,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":222,
@@ -933,7 +984,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/02.png"
    },
    {
       "id":223,
@@ -951,7 +1003,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/04.png"
    },
    {
       "id":224,
@@ -969,7 +1022,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/05.png"
    },
    {
       "id":321,
@@ -987,7 +1041,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":322,
@@ -1005,7 +1060,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/02.png"
    },
    {
       "id":323,
@@ -1023,7 +1079,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/04.png"
    },
    {
       "id":324,
@@ -1041,7 +1098,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/05.png"
    },
    {
       "id":325,
@@ -1059,7 +1117,8 @@
       "attackType":"Magical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/07.png"
    },
    {
       "id":421,
@@ -1077,7 +1136,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":422,
@@ -1095,7 +1155,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/02.png"
    },
    {
       "id":423,
@@ -1113,7 +1174,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/03.png"
    },
    {
       "id":424,
@@ -1131,7 +1193,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/04.png"
    },
    {
       "id":425,
@@ -1149,7 +1212,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/05.png"
    },
    {
       "id":426,
@@ -1167,7 +1231,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/06.png"
    },
    {
       "id":427,
@@ -1185,7 +1250,8 @@
       "attackType":"Magical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/07.png"
    },
    {
       "id":521,
@@ -1203,7 +1269,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/01.png"
    },
    {
       "id":522,
@@ -1221,7 +1288,8 @@
       "attackType":"Physical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/04.png"
    },
    {
       "id":523,
@@ -1239,10 +1307,11 @@
       "attackType":"Magical",
       "synergy":"궁수",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Archer/07.png"
    },
    {
-      "id":41,
+      "id":31,
       "name":"마법사",
       "rarity":"Apprentice",
       "class":"Magia",
@@ -1257,10 +1326,11 @@
       "attackType":"Magical",
       "synergy":"마법사,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/00.png"
    },
    {
-      "id":141,
+      "id":131,
       "name":"화법사",
       "rarity":"Bronze",
       "class":"Magia",
@@ -1275,10 +1345,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/01.png"
    },
    {
-      "id":142,
+      "id":132,
       "name":"독법사",
       "rarity":"Bronze",
       "class":"Magia",
@@ -1293,10 +1364,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/03.png"
    },
    {
-      "id":143,
+      "id":133,
       "name":"빙법사",
       "rarity":"Bronze",
       "class":"Magia",
@@ -1311,10 +1383,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/04.png"
    },
    {
-      "id":241,
+      "id":231,
       "name":"화법사",
       "rarity":"Copper",
       "class":"Magia",
@@ -1329,10 +1402,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/01.png"
    },
    {
-      "id":242,
+      "id":232,
       "name":"전법사",
       "rarity":"Copper",
       "class":"Magia",
@@ -1347,10 +1421,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/02.png"
    },
    {
-      "id":243,
+      "id":233,
       "name":"독법사",
       "rarity":"Copper",
       "class":"Magia",
@@ -1365,10 +1440,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/03.png"
    },
    {
-      "id":244,
+      "id":234,
       "name":"빙법사",
       "rarity":"Copper",
       "class":"Magia",
@@ -1383,10 +1459,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/04.png"
    },
    {
-      "id":341,
+      "id":331,
       "name":"화법사",
       "rarity":"Silver",
       "class":"Magia",
@@ -1401,10 +1478,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/01.png"
    },
    {
-      "id":342,
+      "id":332,
       "name":"전법사",
       "rarity":"Silver",
       "class":"Magia",
@@ -1419,10 +1497,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/02.png"
    },
    {
-      "id":343,
+      "id":333,
       "name":"독법사",
       "rarity":"Silver",
       "class":"Magia",
@@ -1437,10 +1516,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/03.png"
    },
    {
-      "id":344,
+      "id":334,
       "name":"빙법사",
       "rarity":"Silver",
       "class":"Magia",
@@ -1455,10 +1535,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/04.png"
    },
    {
-      "id":345,
+      "id":335,
       "name":"마기아",
       "rarity":"Silver",
       "class":"Magia",
@@ -1473,10 +1554,11 @@
       "attackType":"Physical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/17.png"
    },
    {
-      "id":441,
+      "id":431,
       "name":"화전법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1491,10 +1573,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/11.png"
    },
    {
-      "id":442,
+      "id":432,
       "name":"독빙법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1509,10 +1592,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/12.png"
    },
    {
-      "id":443,
+      "id":433,
       "name":"화독법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1527,10 +1611,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/13.png"
    },
    {
-      "id":444,
+      "id":434,
       "name":"전빙법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1545,10 +1630,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/14.png"
    },
    {
-      "id":445,
+      "id":435,
       "name":"전독법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1563,10 +1649,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/15.png"
    },
    {
-      "id":446,
+      "id":436,
       "name":"화빙법사",
       "rarity":"Gold",
       "class":"Magia",
@@ -1581,10 +1668,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/16.png"
    },
    {
-      "id":447,
+      "id":437,
       "name":"마기아",
       "rarity":"Gold",
       "class":"Magia",
@@ -1599,10 +1687,11 @@
       "attackType":"Physical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/17.png"
    },
    {
-      "id":541,
+      "id":531,
       "name":"화전법사",
       "rarity":"Platinum",
       "class":"Magia",
@@ -1617,10 +1706,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/11.png"
    },
    {
-      "id":542,
+      "id":532,
       "name":"독빙법사",
       "rarity":"Platinum",
       "class":"Magia",
@@ -1635,10 +1725,11 @@
       "attackType":"Magical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/12.png"
    },
    {
-      "id":543,
+      "id":533,
       "name":"마기아",
       "rarity":"Platinum",
       "class":"Magia",
@@ -1653,10 +1744,11 @@
       "attackType":"Physical",
       "synergy":"마법사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Magia/17.png"
    },
    {
-      "id":51,
+      "id":41,
       "name":"주술사",
       "rarity":"Apprentice",
       "class":"Shaman",
@@ -1671,10 +1763,11 @@
       "attackType":"Magical",
       "synergy":"주술사,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/00.png"
    },
    {
-      "id":151,
+      "id":141,
       "name":"염동술사",
       "rarity":"Bronze",
       "class":"Shaman",
@@ -1689,10 +1782,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/01.png"
    },
    {
-      "id":152,
+      "id":142,
       "name":"저주술사",
       "rarity":"Bronze",
       "class":"Shaman",
@@ -1707,10 +1801,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/04.png"
    },
    {
-      "id":153,
+      "id":143,
       "name":"흑마법사",
       "rarity":"Bronze",
       "class":"Shaman",
@@ -1725,10 +1820,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/05.png"
    },
    {
-      "id":251,
+      "id":241,
       "name":"염동술사",
       "rarity":"Copper",
       "class":"Shaman",
@@ -1743,10 +1839,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/01.png"
    },
    {
-      "id":252,
+      "id":242,
       "name":"초능력자",
       "rarity":"Copper",
       "class":"Shaman",
@@ -1761,10 +1858,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/02.png"
    },
    {
-      "id":253,
+      "id":243,
       "name":"저주술사",
       "rarity":"Copper",
       "class":"Shaman",
@@ -1779,10 +1877,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/04.png"
    },
    {
-      "id":254,
+      "id":244,
       "name":"흑마법사",
       "rarity":"Copper",
       "class":"Shaman",
@@ -1797,10 +1896,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/05.png"
    },
    {
-      "id":351,
+      "id":341,
       "name":"염동술사",
       "rarity":"Silver",
       "class":"Shaman",
@@ -1815,10 +1915,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/01.png"
    },
    {
-      "id":352,
+      "id":342,
       "name":"초능력자",
       "rarity":"Silver",
       "class":"Shaman",
@@ -1833,10 +1934,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/02.png"
    },
    {
-      "id":353,
+      "id":343,
       "name":"저주술사",
       "rarity":"Silver",
       "class":"Shaman",
@@ -1851,10 +1953,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/04.png"
    },
    {
-      "id":354,
+      "id":344,
       "name":"흑마법사",
       "rarity":"Silver",
       "class":"Shaman",
@@ -1869,10 +1972,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/05.png"
    },
    {
-      "id":355,
+      "id":345,
       "name":"네크로맨서",
       "rarity":"Silver",
       "class":"Shaman",
@@ -1887,10 +1991,11 @@
       "attackType":"Physical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/07.png"
    },
    {
-      "id":451,
+      "id":441,
       "name":"염동술사",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1905,10 +2010,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/01.png"
    },
    {
-      "id":452,
+      "id":442,
       "name":"초능력자",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1923,10 +2029,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/02.png"
    },
    {
-      "id":453,
+      "id":443,
       "name":"골렘술사",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1941,10 +2048,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/03.png"
    },
    {
-      "id":454,
+      "id":444,
       "name":"저주술사",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1959,10 +2067,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/04.png"
    },
    {
-      "id":455,
+      "id":445,
       "name":"흑마법사",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1977,10 +2086,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/05.png"
    },
    {
-      "id":456,
+      "id":446,
       "name":"혈마법사",
       "rarity":"Gold",
       "class":"Shaman",
@@ -1995,10 +2105,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/06.png"
    },
    {
-      "id":457,
+      "id":447,
       "name":"네크로맨서",
       "rarity":"Gold",
       "class":"Shaman",
@@ -2013,10 +2124,11 @@
       "attackType":"Physical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/07.png"
    },
    {
-      "id":551,
+      "id":541,
       "name":"염동술사",
       "rarity":"Platinum",
       "class":"Shaman",
@@ -2031,10 +2143,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/01.png"
    },
    {
-      "id":552,
+      "id":542,
       "name":"저주술사",
       "rarity":"Platinum",
       "class":"Shaman",
@@ -2049,10 +2162,11 @@
       "attackType":"Magical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/04.png"
    },
    {
-      "id":553,
+      "id":543,
       "name":"네크로맨서",
       "rarity":"Platinum",
       "class":"Shaman",
@@ -2067,10 +2181,11 @@
       "attackType":"Physical",
       "synergy":"주술사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Shaman/07.png"
    },
    {
-      "id":61,
+      "id":51,
       "name":"치유사",
       "rarity":"Apprentice",
       "class":"Holy",
@@ -2085,10 +2200,11 @@
       "attackType":"Magical",
       "synergy":"치유사,새내기",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":161,
+      "id":151,
       "name":"치유사",
       "rarity":"Bronze",
       "class":"Holy",
@@ -2103,10 +2219,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":162,
+      "id":152,
       "name":"수호사",
       "rarity":"Bronze",
       "class":"Holy",
@@ -2121,10 +2238,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/02.png"
    },
    {
-      "id":163,
+      "id":153,
       "name":"점성술사",
       "rarity":"Bronze",
       "class":"Holy",
@@ -2139,10 +2257,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/04.png"
    },
    {
-      "id":261,
+      "id":251,
       "name":"치유사",
       "rarity":"Copper",
       "class":"Holy",
@@ -2157,10 +2276,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":262,
+      "id":252,
       "name":"수호사",
       "rarity":"Copper",
       "class":"Holy",
@@ -2175,10 +2295,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/02.png"
    },
    {
-      "id":263,
+      "id":253,
       "name":"점성술사",
       "rarity":"Copper",
       "class":"Holy",
@@ -2193,10 +2314,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/04.png"
    },
    {
-      "id":264,
+      "id":254,
       "name":"호부기사",
       "rarity":"Copper",
       "class":"Holy",
@@ -2211,10 +2333,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/05.png"
    },
    {
-      "id":361,
+      "id":351,
       "name":"치유사",
       "rarity":"Silver",
       "class":"Holy",
@@ -2229,10 +2352,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":362,
+      "id":352,
       "name":"수호사",
       "rarity":"Silver",
       "class":"Holy",
@@ -2247,10 +2371,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/02.png"
    },
    {
-      "id":363,
+      "id":353,
       "name":"점성술사",
       "rarity":"Silver",
       "class":"Holy",
@@ -2265,10 +2390,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/04.png"
    },
    {
-      "id":364,
+      "id":354,
       "name":"호부기사",
       "rarity":"Silver",
       "class":"Holy",
@@ -2283,10 +2409,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/05.png"
    },
    {
-      "id":365,
+      "id":355,
       "name":"성기사",
       "rarity":"Silver",
       "class":"Holy",
@@ -2301,10 +2428,11 @@
       "attackType":"Physical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/07.png"
    },
    {
-      "id":461,
+      "id":451,
       "name":"치유사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2319,10 +2447,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":462,
+      "id":452,
       "name":"수호사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2337,10 +2466,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/02.png"
    },
    {
-      "id":463,
+      "id":453,
       "name":"지원가",
       "rarity":"Gold",
       "class":"Holy",
@@ -2355,10 +2485,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/03.png"
    },
    {
-      "id":464,
+      "id":454,
       "name":"점성술사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2373,10 +2504,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/04.png"
    },
    {
-      "id":465,
+      "id":455,
       "name":"호부기사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2391,10 +2523,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/05.png"
    },
    {
-      "id":466,
+      "id":456,
       "name":"보호사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2409,10 +2542,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/06.png"
    },
    {
-      "id":467,
+      "id":457,
       "name":"성기사",
       "rarity":"Gold",
       "class":"Holy",
@@ -2427,10 +2561,11 @@
       "attackType":"Physical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/07.png"
    },
    {
-      "id":561,
+      "id":551,
       "name":"치유사",
       "rarity":"Platinum",
       "class":"Holy",
@@ -2445,10 +2580,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/01.png"
    },
    {
-      "id":562,
+      "id":552,
       "name":"점성술사",
       "rarity":"Platinum",
       "class":"Holy",
@@ -2463,10 +2599,11 @@
       "attackType":"Magical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/04.png"
    },
    {
-      "id":563,
+      "id":553,
       "name":"성기사",
       "rarity":"Platinum",
       "class":"Holy",
@@ -2481,6 +2618,7 @@
       "attackType":"Physical",
       "synergy":"치유사",
       "equipAccessories":"0,0,0",
-      "haveSkill":"0,0,0"
+      "haveSkill":"0,0,0",
+      "imgStr":"/Icon/UnitSymbol/Holy/07.png"
    }
 ]

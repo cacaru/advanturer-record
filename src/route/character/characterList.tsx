@@ -12,7 +12,7 @@ export default function CharacterList(){
 
     // 캐릭터 목록 확인하기
     const allUnit = useUnitDataStore((s) => s.data);
-    const [showUnit, setShowUnit] = useState<Array<IUnitData>>(useUnitDataStore((s) => s.data));
+    const [showUnit, setShowUnit] = useState<Array<IUnitData>>(Object.values(allUnit));
 
     // 목록 정렬 기준
     const [isAsc, setIsAsc] = useState<boolean>(true);
@@ -44,11 +44,11 @@ export default function CharacterList(){
         // type :: 직업분류
         // asc ::  정렬 방향
         // stand :: 정렬 기준
-        var result: IUnitData[];
+        var result: Array<IUnitData>;
         
         // 데이터 분류
-        if(type === "All") result = allUnit;
-        else result = allUnit.filter( (unit) => unit.class === ClassTypeLabel[type]);
+        if(type === "All") result = Object.values(allUnit);
+        else result = Object.values(allUnit).filter( (unit) => unit.class === ClassTypeLabel[type]);
 
         // 정렬
         if(asc) {
@@ -155,7 +155,7 @@ export default function CharacterList(){
                 onMouseMove={handleMouseMove}
                 >
                 {
-                    showUnit.map((u, i) => (
+                    Object.values(showUnit).map((u, i) => (
                         <div key={u.id} onClick={() => MoveDetail(u.id, nowClassId)} className={styles.characterCard}>
                             <div>
                                 { u.id }

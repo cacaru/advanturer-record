@@ -1,0 +1,32 @@
+/****************************
+종합 강화창 ( 강화 로비 ) css
+****************************/
+
+/* 배경 */
+.pageBg {
+    position: absolute;
+    padding: auto;
+    background-image: url('/public/UI/Background/upgradeBg.png');
+    background-size: cover;
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+
+.list {
+    position: absolute;
+    left: 10%;
+    top: 13%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+}
+
+.iconList {
+    height: 100%;
+    border: 2px solid blue;
+    cursor: pointer;
+}

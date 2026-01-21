@@ -11,9 +11,10 @@ export interface IUnitData {
     class: ClassType,
     stats: UnitStats,
     attackType: AttackType,
-    synergy: Array<string>
-    equipAccessories: Array<number>
-    haveSkill: Array<number>
+    synergy: Array<string>,
+    equipAccessories: Array<number>,
+    haveSkill: Array<number>,
+    imgStr: string
 }
 
 export interface JsonUnitData {
@@ -32,8 +33,10 @@ export interface JsonUnitData {
     attackType: string,
     synergy: string,
     equipAccessories: string,
-    haveSkill: string
+    haveSkill: string,
+    imgStr: string
 }
+
 
 // 업그레이드 변수
 // 업그레이드 시 올라갈 값들

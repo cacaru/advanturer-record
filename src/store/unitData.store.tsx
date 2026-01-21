@@ -2,16 +2,16 @@ import { create } from "zustand";
 import { IUnitData } from "../types/unitInfo";
 
 export interface IUnitDataStore {
-    data: IUnitData[];
+    data: Record<number, IUnitData>;
 
-    setData: (data: IUnitData[]) => void;
+    setData: (data: Record<number, IUnitData>) => void;
 
 }
 
 export const useUnitDataStore = create<IUnitDataStore>((set) => ({
     data: [],
     
-    setData: (data: IUnitData[]) => {
+    setData: (data: Record<number, IUnitData>) => {
             set({
                 data,
             })
