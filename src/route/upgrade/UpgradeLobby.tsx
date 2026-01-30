@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./UpgradeLobby.module.css";
 
 export default function UpgradeLobby(){
+
+    const navigater = useNavigate();
+    const onMoveUnit = () => {
+        navigater("/upgrade/unit");
+    }
+
     return(
         <div>
             {/* 배경 */}
@@ -8,7 +15,7 @@ export default function UpgradeLobby(){
 
             {/* 메인 화면 */}
             <div className={styles.list}>
-                <div className={styles.iconList}>
+                <div onClick={onMoveUnit} className={styles.iconList}>
                     유닛
                 </div>
                 <div className={styles.iconList}>

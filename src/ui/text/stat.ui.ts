@@ -11,3 +11,14 @@ export const StatUI: Record<StatKey, TranslationKey> = {
     "criticalChance": "stats.criticalChance",
     "criticalDamage": "stats.criticalDamage"
 }
+
+export const StatUIStr:Record<string, TranslationKey> = {
+    "health": "stats.health",
+    "defense": "stats.defense",
+    "attack": "stats.attack",
+    "range": "stats.range",
+    "moveSpeed": "stats.moveSpeed",
+    "attackSpeed": "stats.attackSpeed",
+    "criticalChance": "stats.criticalChance",
+    "criticalDamage": "stats.criticalDamage"
+}

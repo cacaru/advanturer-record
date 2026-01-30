@@ -10,6 +10,8 @@ import Modal from './component/modal/Modal';
 import UpgradeLobby from './route/upgrade/UpgradeLobby';
 import { loadUnitDefaultData } from './component/loader/unitInfoLoader';
 import { loadUnitCombineData } from './component/loader/unitCombLoader';
+import UpgradeUnit from './route/upgrade/UpgradeUnit';
+import { loadSynergyData } from './component/loader/synergyLoader';
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
     loadLocalResource();
     loadUnitDefaultData();
     loadUnitCombineData();
+    loadSynergyData();
   }, []);
    
   // 스크린 1920*1080 비율 고정
@@ -54,6 +57,7 @@ function App() {
             <Route path="/character" element={<CharacterList />} />
             <Route path="/character/detail" element={<CharacterDetail />} />
             <Route path="/upgrade" element={<UpgradeLobby />} />
+            <Route path="/upgrade/unit" element={<UpgradeUnit />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -9,6 +9,7 @@ export interface IBaseModal {
 
 export interface ISynergyModal extends IBaseModal {
     synergyTitle: string,
+    icon: string,
     explain: string,
 }
 

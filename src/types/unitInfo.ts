@@ -11,7 +11,7 @@ export interface IUnitData {
     class: ClassType,
     stats: UnitStats,
     attackType: AttackType,
-    synergy: Array<string>,
+    synergy: Array<number>,
     equipAccessories: Array<number>,
     haveSkill: Array<number>,
     imgStr: string

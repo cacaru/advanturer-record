@@ -6,7 +6,7 @@ interface Resource {
     value: number;
 }
 
-export async function loadLocalResource() {
+export function loadLocalResource() {
     const resourceTypeConvert: Resource[] = rawResources.resources.map(r => ({ ...r, value: Number(r.value)}));
     useResourceStore.getState().setResource(resourceTypeConvert);
 }

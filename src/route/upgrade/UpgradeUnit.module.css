@@ -1,0 +1,25 @@
+/************************
+유닛 업그레이드 창
+*************************/
+
+/* 배경화면 */
+.pageBg {
+    position: absolute;
+    padding: auto;
+    background-image: url('/public/UI/Background/upgradeBg.png');
+    background-size: cover;
+    filter: blur(15px);
+    width: 100%;
+    height: 100%;
+}
+
+/* 좌측 유닛 목록 화면 */
+.leftListContainer {
+    position: absolute;
+    top: 15%;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 16px;
+}

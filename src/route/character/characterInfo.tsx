@@ -6,12 +6,23 @@ import { useNavigate } from "react-router-dom";
 import { langT } from "../../locale";
 import { RarityTypeUI } from "../../ui/text/rarityType.ui";
 import { AttackTypeUI } from "../../ui/text/attackType.ui";
+import { useSynergyDataStore } from "../../store/synergyData.store";
+import { AddType } from "../../types/addType.type";
+import { Area } from "../../types/area.type";
+import { StatTypeLabel } from "../../domain/statType.mapper";
+import { StatUI, StatUIStr } from "../../ui/text/stat.ui";
+import { STAT_KEY } from "../../types/stats.type";
+import { StatType } from "../../types/statType.type";
 
 export default function CharacterInfo() {
 
     const openModal = useModalStore((s) => s.openModal);
 
+    // 시너지 정보
+    const synergyData = useSynergyDataStore().data;
+    console.log(synergyData);
     const data = useUnitNavStore().cdata;
+    console.log(data);
     // data가 null 이면 이전 페이지로 돌아감
     const navigater = useNavigate();
     if(data === null){
@@ -178,35 +189,40 @@ export default function CharacterInfo() {
                 <div className={styles.infoBottom}>
                     <div className={styles.infoBottomTop}>
                         <div className={styles.infoSynergyArea}>
-                            <ToolTip title="기사단" explain="견습 동급 은금 금급 필요"
-                                onClick={() => openModal( "SYNERGY",{
-                                    title: "시너지 설명창",
-                                    synergyTitle: "기사단",
-                                    explain: "견습 동급 은금 금급 기사들을 필드에 모으면 ~만큼 강해집니다."
-                                })}
-                            >
-                                <img className={styles.infoSynergy} src="/Icon/coin.png" alt="테스트"/>
-                            </ToolTip>
-
-                            <ToolTip title="모험의 시작" explain="견습 6종"
-                                onClick={() => openModal( "SYNERGY",{
-                                    title: "시너지 설명창",
-                                    synergyTitle: "모험의 시작",
-                                    explain: "견습등급의 기사, 창술사, 궁수, 마법사, 주술사, 치유사와 함께합니다. 공격력이 100 증가합니다."
-                                })}
-                            >
-                                <img className={styles.infoSynergy} src="/Icon/coin.png" alt="테스트"/>
-                            </ToolTip>
-
-                            <ToolTip title="왕도" explain="같은 등급의 마법사 궁사 치유사"
-                                onClick={() => openModal( "SYNERGY",{
-                                    title: "시너지 설명창",
-                                    synergyTitle: "왕도",
-                                    explain: "같은 등급의 마법사 궁사 치유사와 필드에서 함께하면 ~만큼 강해집니다."
-                                })}
-                            >
-                                <img className={styles.infoSynergy} src="/Icon/coin.png" alt="테스트"/>
-                            </ToolTip>                                
+                            {
+                                data !== null && (
+                                    data.synergy.map((s) => (
+                                        <ToolTip title={synergyData[s].name} explain={
+                                            `조건 달성으로 ${langT(StatUIStr[synergyData[s].stat[0]])}
+                                            ${synergyData[s].addType === AddType.Double ? "과/와 " + langT(StatUIStr[synergyData[s].stat[1]]) : (
+                                                synergyData[s].addType === AddType.Triple ?  langT(StatUIStr[synergyData[s].stat[1]]) + "과/와 " + langT(StatUIStr[synergyData[s].stat[2]]) : "")
+                                            } 상승`
+                                        }
+                                            onClick={() => openModal( "SYNERGY",{
+                                                title: "시너지 설명창",
+                                                icon: s,
+                                                synergyTitle: synergyData[s].name,
+                                                explain: `${synergyData[s].name} 훈련을 통해 강해집니다.\n
+                                            유닛이 ${synergyData[s].condition} 명이 모일 때 마다 
+                                            ${synergyData[s].area === Area.Target ? "대상 유닛" : 
+                                                (synergyData[s].area === Area.Map ? "모든 유닛" : (
+                                                    synergyData[s].area === Area.Front ? "전열 유닛" : (
+                                                        synergyData[s].area === Area.Middle ? "중열 유닛" : "후열 유닛"
+                                                    )
+                                                ))
+                                            }의 ${langT(StatUIStr[synergyData[s].stat[0]])}
+                                            ${synergyData[s].addType === AddType.Double ? "과/와 " + langT(StatUIStr[synergyData[s].stat[1]]) : (
+                                                synergyData[s].addType === AddType.Triple ?  langT(StatUIStr[synergyData[s].stat[1]]) + "과/와 " + langT(StatUIStr[synergyData[s].stat[2]]) : "")
+                                            }가
+                                            ${synergyData[s].value} 만큼 상승합니다.
+                                            `
+                                            })}
+                                        >
+                                            <img className={styles.infoSynergy} src={`/Icon/SynergySymbol/${s}.png`} alt={synergyData[s].name}/>
+                                        </ToolTip>
+                                    )))
+                            }
+              
                         </div>
                     </div>  
                     <div className={styles.infoBottomBottom}>

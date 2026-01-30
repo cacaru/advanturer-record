@@ -9,7 +9,7 @@ import { ClassType, ClassKey} from "../../types/class.type";
 import { ClassTypeLabel } from "../../domain/class.mapper";
 import { UnitStats } from "../../types/stats.type";
 
-export async function loadUnitDefaultData() {
+export function loadUnitDefaultData() {
     const unitTypeConvert: IUnitData[] = rawData.map((unit) => convertUnitData(unit));
     // convert 된 유닛은 id 기준으로 정렬해야함
     unitTypeConvert.sort((a,b) => a.id - b.id);
@@ -31,7 +31,7 @@ function convertUnitData(json: JsonUnitData): IUnitData {
         class: classTypeChecker(json.class),
         stats: convertUnitStat(json.hp, json.attack, json.defense, json.range, json.attackSpeed, json.moveSpeed, json.criticalChance, json.criticalDamage),
         attackType: attackTypeChecker(json.attackType),
-        synergy: json.synergy.split(","),
+        synergy: convertStringToNumArray(json.synergy),
         equipAccessories: convertStringToNumArray(json.equipAccessories),
         haveSkill: convertStringToNumArray(json.haveSkill),
         imgStr: json.imgStr

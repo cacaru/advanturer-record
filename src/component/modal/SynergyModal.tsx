@@ -3,14 +3,14 @@ import { ISynergyModal } from "../../types/modals"
 import styles from "./SynergyModal.module.css"
 
 
-export default function SynergyModal( {synergyTitle, explain} : ISynergyModal) {
+export default function SynergyModal( {synergyTitle, icon, explain} : ISynergyModal) {
     const closeModal = useModalStore((s) => s.closeModal);
 
     return (
         <div className={styles.container}>
             <div className={styles.top}>
                 <div>
-                    아이콘
+                    <img className={styles.infoSynergy} src={`/Icon/SynergySymbol/${icon}.png`} alt={synergyTitle}/>
                 </div>
                 <div className={styles.synergyTitle}>
                     {synergyTitle}
@@ -23,11 +23,6 @@ export default function SynergyModal( {synergyTitle, explain} : ISynergyModal) {
             <div className={styles.content}>
                 <div className={styles.explain}>
                     {explain}
-                    {explain}
-                    {explain}
-                    {explain}
-                    {explain}
-
                 </div>
             </div>
         </div>

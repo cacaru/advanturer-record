@@ -42,6 +42,9 @@ export default function Header() {
             case "/upgrade":
                 path = "/";
                 break;
+            case "/upgrade/unit":
+                path = "/upgrade";
+                break;
         }
         navigater(path);
     }
@@ -58,6 +61,7 @@ export default function Header() {
             }
             {   (cpath === "/character/detail" ||
                  cpath === "/upgrade" ||
+                 cpath === "/upgrade/unit" || 
                  cpath === "/character") && (
                 <div className={styles.topLeft}>
                     <div className={styles.backBtn} onClick={MoveBack}>
